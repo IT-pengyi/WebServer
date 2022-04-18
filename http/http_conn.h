@@ -48,27 +48,27 @@ public:
         PATCH
     };
 
-    enum CHECK_STATE {      //解析客户请求时，主状态机所处的状态
-        CHECK_STATE_REQUESTLINE = 0,
-        CHECK_STATE_HEADER,
-        CHECK_STATE_CONTENT
+    enum CHECK_STATE {      //解析客户请求时，标识解析位置,主状态机所处的状态
+        CHECK_STATE_REQUESTLINE = 0,    //解析请求行
+        CHECK_STATE_HEADER,             //解析请求头
+        CHECK_STATE_CONTENT             //解析消息体，仅用于解析POST请求
     };
 
-    enum HTTP_CODE {        //服务器处理Http请求的可能结果
-        NO_REQUEST = 0,
-        GET_REQUEST,
-        BAD_REQUEST,
+    enum HTTP_CODE {        //服务器处理Http请求的处理结果
+        NO_REQUEST = 0,     //请求不完整，需要继续读取请求报文数据
+        GET_REQUEST,        //获得了完整的HTTP请求
+        BAD_REQUEST,        //HTTP请求报文有语法错误
         NO_RESOURCE,
         FORBIDDEN_REQUEST,
         FILE_REQUEST,
-        INTERNAL_ERROR,
+        INTERNAL_ERROR,     //服务器内部错误
         CLOSED_CONNECTION
     };
 
-    enum LINE_STATUS {      //行的读取状态
-        LINE_OK = 0,
-        LINE_BAD,
-        LINE_OPEN
+    enum LINE_STATUS {      //标识解析一行的读取状态，从状态机所处的状态。
+        LINE_OK = 0,        //完整读取一行
+        LINE_BAD,           //报文语法有误
+        LINE_OPEN           //读取的行不完整
     };
 
 public:
@@ -80,19 +80,20 @@ public:
     void init(int sockfd, const sockaddr_in& addr, char*, int, int, string user, string passwd, string sqlname);
     void close_conn(bool real_close = true);    //关闭连接
     void process();         //处理客户请求
-    bool read();            //非阻塞读操作
+    bool read_once();            //非阻塞读操作
     bool write();           //非阻塞写操作
     sockaddr_in* get_address() {
         return &m_address;
     }
-    void initmysql_result(sql_connection_pool* connPool);
+    void initmysql_result(connection_pool* connPool);
     int timer_flag;
     int improv;
     
 private:
     void init();                    //初始化连接
     HTTP_CODE process_read();       //解析HTTP请求
-    bool process_read(HTTP_CODE ret);   //填充HTTP应答
+    bool process_write(HTTP_CODE ret);   //填充HTTP应答
+
     /*下面这一组函数被process_read调用来分析HTTP请求*/
     HTTP_CODE parse_request_line(char* text);
     HTTP_CODE parse_headers(char* text);
@@ -116,15 +117,16 @@ public:
     /*所有socket上的事件都被注册到同一个epoll内核事件中，所有将epoll文件描述符设置为静态的*/
     static int m_epollfd;
     static int m_user_count;    //统计用户数量
+
     MYSQL* mysql;
     int m_state;        //读为0，写为1
 
 private:
-    /*该HTTP连接的socket和对方的socket地址*/
-    int m_sockfd;
-    sockaddr_in m_address;
+    
+    int m_sockfd;       //该HTTP连接的socket
+    sockaddr_in m_address;  //对方的socket地址
 
-    char m_read_buf[READ_BUFFER_SIZE];  //读缓冲区
+    char m_read_buf[READ_BUFFER_SIZE];  //应用程序的读缓冲区
     int m_read_idx;         //标识读缓冲中已经读入的客户数据的最后一个字节的下一个位置
     int m_checked_idx;      //当前正在分析的字符在读缓冲区中的位置
     int m_start_line;       //当前正在解析的行的起始位置
@@ -135,7 +137,8 @@ private:
     METHOD m_method;            //请求方法
 
     char m_real_file[FILENAME_LEN]; //客户请求的目标文件的完整路径，其内容等于doc_root + m_url, doc_root是网站根目录
-    char* u_url;        //客户请求的目标文件的文件名
+    char* m_url;        //客户请求的目标文件的文件名
+    char* doc_root;     //网站根目录
     char* m_version;    //HTTP协议版本号，本项目只支持HTTP/1.1
     char* m_host;       //主机名
     int m_content_length;   //HTTP请求的消息体的长度
@@ -150,9 +153,9 @@ private:
 
     int cgi;             //是否启用的POST
     char* m_string;     //存储请求头数据
-    int bytes_to_send;
-    int bytes_have_send;
-    char* doc_root;
+    int bytes_to_send;  //剩余发送字节数
+    int bytes_have_send;    //已发送字节数
+    
 
     map<string, string> m_users;
     int m_TRIGMode;
