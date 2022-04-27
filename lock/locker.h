@@ -22,11 +22,9 @@ public:
             throw std::exception();
         }
     }
-
-    ~sem(){
-        if (sem_destroy(&m_sem) != 0) {
-            throw std::exception();
-        }
+    //in C++11 destructors default to noexcept
+    ~sem(){    
+       sem_destroy(&m_sem);
     }
 
     bool wait() {     // -1
@@ -50,9 +48,7 @@ public:
     }
     
     ~locker() {
-        if (pthread_mutex_destroy(&m_mutex) != 0) {
-            throw std::exception();
-        }
+        pthread_mutex_destroy(&m_mutex);
     }
 
     bool lock() {
@@ -80,17 +76,16 @@ public:
     }
 
     ~cond() {
-        if (pthread_cond_destroy(&m_cond) != 0) {
-            throw std::exception();
-        }
+        pthread_cond_destroy(&m_cond);
+        
     }
 
     bool wait(pthread_mutex_t* m_mutex) {
         return pthread_cond_wait(&m_cond, m_mutex) == 0;
     }
 
-    bool timedwait(pthread_mutex_t* m_mutex, struct timespec* t) {
-        return pthread_cond_timedwait(&m_cond, m_mutex, t) == 0;
+    bool timewait(pthread_mutex_t* m_mutex, struct timespec t) {
+        return pthread_cond_timedwait(&m_cond, m_mutex, &t) == 0;
     }
 
     bool signal() {

@@ -69,7 +69,7 @@ public:
      //epoll_event相关
     epoll_event events[MAX_EVENT_NUMBER];
 
-    int m_listendfd;
+    int m_listenfd;
     int m_OPT_LINGER;
     int m_TRIGMode;
     int m_LISTENTrigmode;

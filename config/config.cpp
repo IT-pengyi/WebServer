@@ -1,8 +1,8 @@
 #include "config.h"
 
 Config::Config() {
-    //端口号,默认9006
-    PORT = 9006;
+    //端口号,默认9005
+    PORT = 9005;
 
     // 日志写入方式， 默认同步
     LOGWrite = 0;

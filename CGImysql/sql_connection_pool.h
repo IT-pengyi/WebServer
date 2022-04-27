@@ -34,7 +34,7 @@ private:
     int m_CurConn;      //当前已使用的连接数
     int m_FreeConn;     //当前空闲的连接数
     locker lock;
-    std::list<MYSQL*> connlist;     //连接池
+    std::list<MYSQL*> connList;     //连接池
     sem reserve;            //信号量初始化为数据库的连接总数
 
 public:

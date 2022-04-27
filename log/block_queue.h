@@ -78,7 +78,7 @@ public:
     }
 
      //返回队尾元素
-    bool front(T& value) {
+    bool back(T& value) {
         m_mutex.lock();
         if (m_size == 0) {
             m_mutex.unlock();
@@ -111,7 +111,7 @@ public:
     //若当前没有线程等待条件变量,则唤醒无意义
     bool push(const T& item) {
         m_mutex.lock();
-        if (m_size >= max_size) {
+        if (m_size >= m_max_size) {
             m_cond.broadcast();
             m_mutex.unlock();
             return false;
@@ -153,7 +153,7 @@ public:
         if (m_size <= 0) {
             t.tv_sec = now.tv_sec + ms_timeout / 1000;
             t.tv_nsec = (ms_timeout % 1000) * 1000;
-            if (!m_cond.wait(m_mutex.get(), t)) {
+            if (!m_cond.timewait(m_mutex.get(), t)) {
                 m_mutex.unlock();
                 return false;
             }

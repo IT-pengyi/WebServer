@@ -42,7 +42,7 @@ void connection_pool::init(string url, string User, string PassWord, string DBNa
             LOG_ERROR("Mysql Error");
             exit(1);
         }
-        connlist.push_back(con);
+        connList.push_back(con);
         ++m_FreeConn;
 
     }
@@ -53,15 +53,15 @@ void connection_pool::init(string url, string User, string PassWord, string DBNa
 //当有请求时，从数据库连接池中返回一个可用连接，更新使用和空闲连接数
 MYSQL* connection_pool::GetConnection() {
     MYSQL* con = NULL;
-    if (connlist.size() == 0) {
+    if (connList.size() == 0) {
         return NULL;
     }
     //取出连接，信号量原子减1，为0则等待
     reserve.wait();
     lock.lock();
 
-    con = connlist.front();
-    connlist.pop_front();
+    con = connList.front();
+    connList.pop_front();
 
     ++m_CurConn;
     --m_FreeConn;
@@ -75,7 +75,7 @@ bool connection_pool::ReleaseConnection(MYSQL* con) {
         return false;
     }
     lock.lock();
-    connlist.push_back(con);
+    connList.push_back(con);
     ++m_FreeConn;
     --m_CurConn;
     lock.unlock();
@@ -86,15 +86,15 @@ bool connection_pool::ReleaseConnection(MYSQL* con) {
 //销毁数据库连接池
 void connection_pool::DestroyPool() {
     lock.lock();
-    if (connlist.size() > 0) {
+    if (connList.size() > 0) {
         list<MYSQL*>::iterator it;
-        for (it = connlist.begin(); it != connlist.end(); ++it) {
+        for (it = connList.begin(); it != connList.end(); ++it) {
             MYSQL* con = *it;
             mysql_close(con);
         }
         m_CurConn = 0;
         m_FreeConn = 0;
-        connlist.clear();
+        connList.clear();
     }
     lock.unlock();
 }

@@ -37,9 +37,9 @@ void http_conn::initmysql_result(connection_pool* connPool) {
 
     //从结果集中获取下一行，将对应的用户名和密码，存入map中
     while (MYSQL_ROW row = mysql_fetch_row(result)) {
-        string user(row[0]);
-        string passwd(row[1]);
-        users[user] = passwd;
+        string temp1(row[0]);
+        string temp2(row[1]);
+        users[temp1] = temp2;
     }
 }
 
@@ -56,9 +56,9 @@ void addfd(int epollfd, int fd, bool one_shot, int TRIGmode) {
     epoll_event event;
     event.data.fd = fd;
     if (TRIGmode == 1) {
-        event.events = EPOLLIN | EPOLLET | EPOLLHUP;
+        event.events = EPOLLIN | EPOLLET | EPOLLRDHUP;
     } else {
-        event.events = EPOLLIN | EPOLLHUP;
+        event.events = EPOLLIN | EPOLLRDHUP;
     }
     if (one_shot) {
         event.events |= EPOLLONESHOT;
@@ -79,9 +79,9 @@ void modfd(int epollfd, int fd, int ev, int TRIGmode) {
     event.data.fd = fd;
 
     if (TRIGmode == 1) {
-        event.events = ev | EPOLLET | EPOLLONESHOT | EPOLLHUP;
+        event.events = ev | EPOLLET | EPOLLONESHOT | EPOLLRDHUP;
     } else {
-        event.events = ev | EPOLLONESHOT | EPOLLHUP;
+        event.events = ev | EPOLLONESHOT | EPOLLRDHUP;
     }
     epoll_ctl(epollfd, EPOLL_CTL_MOD, fd, &event);
 }
@@ -176,9 +176,9 @@ http_conn::LINE_STATUS http_conn::parse_line() {
                 return LINE_OK;
             }
             return LINE_BAD;
-        }
-        return LINE_OPEN;
+        }  
     }
+    return LINE_OPEN;
 }
 
 //循环读取客户数据，直到无数据可读或对方关闭连接
@@ -211,7 +211,7 @@ bool http_conn::read_once() {
             }
             m_read_idx += bytes_read;
         }
-        return false;
+        return true;
     }             
 }
 
@@ -243,7 +243,7 @@ http_conn::HTTP_CODE http_conn::parse_request_line(char* text) {
         return BAD_REQUEST;
     }
     *m_version++ = '\0';
-    m_version += strspn(m_url, " \t");
+    m_version += strspn(m_version, " \t");
     //仅支持HTTP/1.1
     if (strcasecmp(m_version, "HTTP/1.1") != 0) {
         return BAD_REQUEST;
@@ -318,9 +318,9 @@ http_conn::HTTP_CODE http_conn::process_read() {
     LINE_STATUS line_status = LINE_OK;
     HTTP_CODE ret = NO_REQUEST;
     char* text = 0;
-/* 在GET请求报文中，每一行都是\r\n作为结束，所以对报文进行拆解时，仅用从状态机的状态line_status=parse_line())==LINE_OK语句即可。
-但，在POST请求报文中，消息体的末尾没有任何字符，所以不能使用从状态机的状态，这里转而使用主状态机的状态作为循环入口条件。
-增加了&& line_status == LINE_OK语句，并在完成消息体解析后，将line_status变量更改为LINE_OPEN，此时可以跳出循环，完成报文解析任务*/
+//在GET请求报文中，每一行都是\r\n作为结束，所以对报文进行拆解时，仅用从状态机的状态line_status=parse_line())==LINE_OK语句即可。
+//但，在POST请求报文中，消息体的末尾没有任何字符，所以不能使用从状态机的状态，这里转而使用主状态机的状态作为循环入口条件。
+//增加了&& line_status == LINE_OK语句，并在完成消息体解析后，将line_status变量更改为LINE_OPEN，此时可以跳出循环，完成报文解析任务
     while ((m_check_state == CHECK_STATE_CONTENT && line_status == LINE_OK) || ((line_status = parse_line()) == LINE_OK)) {
         text = get_line();
         m_start_line = m_checked_idx;
@@ -360,8 +360,8 @@ http_conn::HTTP_CODE http_conn::process_read() {
     return NO_REQUEST;
 }
 
-  /*当得到一个完整，正确的HTTP请求时，就分析目标文件的属性。如果目标文件存在、对所有用户
-可读，且不是目录，则使用mmap将其映射到内存地址m_file_address处，并告诉调用者获取文件成功*/
+  //当得到一个完整，正确的HTTP请求时，就分析目标文件的属性。如果目标文件存在、对所有用户
+//可读，且不是目录，则使用mmap将其映射到内存地址m_file_address处，并告诉调用者获取文件成功
 http_conn::HTTP_CODE http_conn::do_request() {
     //将初始化的m_real_file赋值为网站根目录
     strcpy(m_real_file, doc_root);
@@ -394,7 +394,7 @@ http_conn::HTTP_CODE http_conn::do_request() {
              //如果是注册，先检测数据库中是否有重名的
             //没有重名的，进行增加数据
             char* sql_insert = (char*)malloc(sizeof(char) * 200);
-            strcpy(sql_insert, "INSERT INTO user(username, passwd) VALUEs(");
+            strcpy(sql_insert, "INSERT INTO user(username, passwd) VALUES(");
             strcat(sql_insert, "'");
             strcat(sql_insert, name);
             strcat(sql_insert, "', '");
@@ -415,7 +415,7 @@ http_conn::HTTP_CODE http_conn::do_request() {
             }
         //如果是登录，直接判断
         //若浏览器端输入的用户名和密码在表中可以查找到，返回1，否则返回0    
-        } else if (*(p + 2) == '2') {
+        } else if (*(p + 1) == '2') {
             if (users.find(name) != users.end() && users[name] == password) {
                 strcpy(m_url, "/welcome.html");
             } else {
@@ -641,8 +641,6 @@ bool http_conn::process_write(HTTP_CODE ret) {
                     return false;
                 }
             }
-
-
         }
         default: {
             return false;

@@ -14,12 +14,13 @@ WebServer::WebServer() {
     strcat(m_root, root);
 
     //定时器
+    users_timer = new client_data[MAX_FD];
 
 }
 
 WebServer::~WebServer() {
     close(m_epollfd);
-    close(m_listendfd);
+    close(m_listenfd);
     close(m_pipefd[1]);
     close(m_pipefd[0]);
     delete[] users;
@@ -94,17 +95,17 @@ void WebServer::thread_pool() {
 
 void WebServer::eventListen() {
     //网络编程基础步骤
-    m_listendfd = socket(PF_INET, SOCK_STREAM, 0);
-    assert(m_listendfd >= 0);
+    m_listenfd = socket(PF_INET, SOCK_STREAM, 0);
+    assert(m_listenfd >= 0);
 
     //优雅关闭连接
     if (m_OPT_LINGER == 0) {
         struct linger tmp = {0, 1};
-        setsockopt(m_listendfd, SOL_SOCKET, SO_LINGER, &tmp, sizeof(tmp));
+        setsockopt(m_listenfd, SOL_SOCKET, SO_LINGER, &tmp, sizeof(tmp));
     }
     else if (m_OPT_LINGER == 1) {
         struct linger tmp = {1, 1};
-        setsockopt(m_listendfd, SOL_SOCKET, SO_LINGER, &tmp, sizeof(tmp));
+        setsockopt(m_listenfd, SOL_SOCKET, SO_LINGER, &tmp, sizeof(tmp));
     } 
     int ret = 0;
     struct sockaddr_in address;
@@ -114,10 +115,10 @@ void WebServer::eventListen() {
     address.sin_port = htons(m_port);
 
     int flag = 1;
-    setsockopt(m_listendfd, SOL_SOCKET, SO_REUSEADDR, &flag, sizeof(flag));
-    ret = bind(m_listendfd, (struct sockaddr*)&address, sizeof(address));
+    setsockopt(m_listenfd, SOL_SOCKET, SO_REUSEADDR, &flag, sizeof(flag));
+    ret = bind(m_listenfd, (struct sockaddr*)&address, sizeof(address));
     assert(ret >= 0);
-    ret = listen(m_listendfd, 5);
+    ret = listen(m_listenfd, 5);
     assert(ret >= 0);
 
     utils.init(TIMESLOT);
@@ -127,7 +128,7 @@ void WebServer::eventListen() {
     m_epollfd = epoll_create(5);
     assert(m_epollfd != -1);
 
-    utils.addfd(m_epollfd, m_listendfd, false, m_LISTENTrigmode);
+    utils.addfd(m_epollfd, m_listenfd, false, m_LISTENTrigmode);
     http_conn::m_epollfd = m_epollfd;
 
     ret = socketpair(PF_UNIX, SOCK_STREAM, 0, m_pipefd);
@@ -190,7 +191,7 @@ bool WebServer::dealclinetdata() {
     socklen_t client_addrlength = sizeof(client_address);
     // LT
     if (m_LISTENTrigmode == 0) {
-        int connfd = accept(m_listendfd, (struct sockaddr*)&client_address, &client_addrlength);
+        int connfd = accept(m_listenfd, (struct sockaddr*)&client_address, &client_addrlength);
         if (connfd < 0) {
             LOG_ERROR("%s:errno is:%d", "accept error", errno);
             return false;
@@ -205,7 +206,7 @@ bool WebServer::dealclinetdata() {
     //  ET
     else {
         while (1) {
-            int connfd = accept(m_listendfd, (struct sockaddr*)&client_address, &client_addrlength);
+            int connfd = accept(m_listenfd, (struct sockaddr*)&client_address, &client_addrlength);
             if (connfd < 0)
             {
                 LOG_ERROR("%s:errno is:%d", "accept error", errno);
@@ -334,13 +335,13 @@ void WebServer::eventLoop() {
         for (int i = 0; i < number; ++i) {
             int sockfd = events[i].data.fd;
             //处理新到的客户连接
-            if (sockfd == m_listendfd) {
+            if (sockfd == m_listenfd) {
                 bool flag = dealclinetdata();
                 if (flag == false) {
                     continue;
                 }
             }
-            else if (events[i].events & (EPOLLRDHUP || EPOLLHUP | EPOLLERR)) {
+            else if (events[i].events & (EPOLLRDHUP | EPOLLHUP | EPOLLERR)) {
                 //服务器端关闭连接，移除对应的定时器
                 util_timer* timer = users_timer[sockfd].timer;
                 deal_timer(timer, sockfd);
