@@ -36,7 +36,7 @@ Config::Config() {
 void Config::parse_arg(int argc, char* argv[]) {
     int opt;
     const char* str =  "p:l:m:o:s:t:c:a:";
-    while ( opt = getopt(argc, argv, str) != -1) {
+    while ( (opt = getopt(argc, argv, str)) != -1) {  // 优先级：== > =  因此opt = getopt(argc, argv, str) 左右必需加()
         switch (opt) {
         case 'p': {
             PORT = atoi(optarg);

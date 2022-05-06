@@ -3,6 +3,7 @@
 #include <mysql/mysql.h>
 #include <fstream>
 
+// 300行代码有修改 
 // 定义http响应的状态信息
 const char *status_200_title = "OK";
 const char *status_400_title = "Bad Request";
@@ -295,9 +296,10 @@ http_conn::HTTP_CODE http_conn::parse_headers(char* text) {
         text += 5;
         text += strspn(text, " \t");
         m_host = text;
-    } else {
-        LOG_INFO("opp!unkown header: %s", text);    // 需在log.h 定义
-    }
+    } 
+    //else {
+       // LOG_INFO("opp!unkown header: %s", text);    // 需在log.h 定义
+   // }
     return NO_REQUEST;
 }
 
