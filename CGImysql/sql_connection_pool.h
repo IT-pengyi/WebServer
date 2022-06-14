@@ -24,7 +24,7 @@ public:
     //单例模式
     static connection_pool* GetInstance();
 
-    void init(std::string url, std::string User, std::string PassWord, std::string DataBaseName, int Port, int MaxConn, int close_log);
+    void init(string url, string User, string PassWord, string DataBaseName, int Port, int MaxConn, int close_log);
 
 private:
     connection_pool();
@@ -34,15 +34,15 @@ private:
     int m_CurConn;      //当前已使用的连接数
     int m_FreeConn;     //当前空闲的连接数
     locker lock;
-    std::list<MYSQL*> connList;     //连接池
+    list<MYSQL*> connList;     //连接池
     sem reserve;            //信号量初始化为数据库的连接总数
 
 public:
-    std::string m_url;          //主机地址
-    std::string m_Port;         //数据库端口号
-    std::string m_User;         //登陆数据库用户名
-    std::string m_PassWord;     //登陆数据库密码
-    std::string m_DatabaseName; //使用数据库名
+    string m_url;          //主机地址
+    string m_Port;         //数据库端口号
+    string m_User;         //登陆数据库用户名
+    string m_PassWord;     //登陆数据库密码
+    string m_DatabaseName; //使用数据库名
     int m_close_log;            //日志开关
 
 
@@ -52,7 +52,7 @@ public:
 class connectionRAII {
 
 public:
-    //双指针对MYSQL* con修改
+    //二级指针对MYSQL* con修改, 数据库连接本身是指针类型，所以参数需要通过二级指针才能对其进行修改。
     connectionRAII(MYSQL** con, connection_pool* connPool);
     ~connectionRAII();
 

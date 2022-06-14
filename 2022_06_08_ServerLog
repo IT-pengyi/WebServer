@@ -1,0 +1,1441 @@
+2022-06-08 21:21:29.246084 [info]: timer tick
+2022-06-08 21:21:34.247161 [info]: timer tick
+2022-06-08 21:21:39.248190 [info]: timer tick
+2022-06-08 21:21:43.537189 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:21:43.537342 [info]: adjust timer once
+2022-06-08 21:21:43.537463 [info]: GET / HTTP/1.1
+2022-06-08 21:21:43.537501 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:21:43.537511 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:21:43.537516 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+2022-06-08 21:21:43.537520 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:21:43.537524 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:21:43.537528 [info]: Connection: keep-alive
+2022-06-08 21:21:43.537532 [info]: Upgrade-Insecure-Requests: 1
+2022-06-08 21:21:43.537536 [info]: Sec-Fetch-Dest: document
+2022-06-08 21:21:43.537540 [info]: Sec-Fetch-Mode: navigate
+2022-06-08 21:21:43.537543 [info]: Sec-Fetch-Site: none
+2022-06-08 21:21:43.537548 [info]: Sec-Fetch-User: ?1
+2022-06-08 21:21:43.537551 [info]: 
+2022-06-08 21:21:43.537569 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:21:43.537577 [info]: request;HTTP/1.1 200 OK
+Content-Length:729
+
+2022-06-08 21:21:43.537582 [info]: request;HTTP/1.1 200 OK
+Content-Length:729
+Connection:keep-alive
+
+2022-06-08 21:21:43.537586 [info]: request;HTTP/1.1 200 OK
+Content-Length:729
+Connection:keep-alive
+
+
+2022-06-08 21:21:43.547650 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:21:43.547690 [info]: adjust timer once
+2022-06-08 21:21:43.580674 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:21:43.580886 [info]: adjust timer once
+2022-06-08 21:21:43.581072 [info]: GET /html.css HTTP/1.1
+2022-06-08 21:21:43.581131 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:21:43.581141 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:21:43.581146 [info]: Accept: text/css,*/*;q=0.1
+2022-06-08 21:21:43.581151 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:21:43.581155 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:21:43.581159 [info]: Connection: keep-alive
+2022-06-08 21:21:43.581163 [info]: Referer: http://127.0.0.1:7777/
+2022-06-08 21:21:43.581167 [info]: Sec-Fetch-Dest: style
+2022-06-08 21:21:43.581171 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:21:43.581175 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:21:43.581178 [info]: 
+2022-06-08 21:21:43.581199 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:21:43.581207 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+
+2022-06-08 21:21:43.581215 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+2022-06-08 21:21:43.581220 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+
+2022-06-08 21:21:43.598120 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:21:43.598174 [info]: adjust timer once
+2022-06-08 21:21:43.610205 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:21:43.610400 [info]: adjust timer once
+2022-06-08 21:21:43.610478 [info]: GET /favicon.ico HTTP/1.1
+2022-06-08 21:21:43.610519 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:21:43.610526 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:21:43.610574 [info]: Accept: image/avif,image/webp,*/*
+2022-06-08 21:21:43.610584 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:21:43.610588 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:21:43.610593 [info]: Connection: keep-alive
+2022-06-08 21:21:43.610597 [info]: Referer: http://127.0.0.1:7777/
+2022-06-08 21:21:43.610601 [info]: Sec-Fetch-Dest: image
+2022-06-08 21:21:43.610605 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:21:43.610609 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:21:43.610613 [info]: 
+2022-06-08 21:21:43.610650 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:21:43.610685 [info]: request;HTTP/1.1 200 OK
+Content-Length:4286
+
+2022-06-08 21:21:43.610690 [info]: request;HTTP/1.1 200 OK
+Content-Length:4286
+Connection:keep-alive
+
+2022-06-08 21:21:43.610695 [info]: request;HTTP/1.1 200 OK
+Content-Length:4286
+Connection:keep-alive
+
+
+2022-06-08 21:21:43.635684 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:21:43.635775 [info]: adjust timer once
+2022-06-08 21:21:43.635805 [info]: close fd 16
+2022-06-08 21:21:44.249269 [info]: timer tick
+2022-06-08 21:21:44.936939 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:21:44.937063 [info]: adjust timer once
+2022-06-08 21:21:44.937220 [info]: POST /1 HTTP/1.1
+2022-06-08 21:21:44.937295 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:21:44.937313 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:21:44.937321 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+2022-06-08 21:21:44.937328 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:21:44.937335 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:21:44.937342 [info]: Content-Type: application/x-www-form-urlencoded
+2022-06-08 21:21:44.937348 [info]: Content-Length: 0
+2022-06-08 21:21:44.937355 [info]: Origin: http://127.0.0.1:7777
+2022-06-08 21:21:44.937362 [info]: Connection: keep-alive
+2022-06-08 21:21:44.937368 [info]: Referer: http://127.0.0.1:7777/
+2022-06-08 21:21:44.937374 [info]: Upgrade-Insecure-Requests: 1
+2022-06-08 21:21:44.937381 [info]: Sec-Fetch-Dest: document
+2022-06-08 21:21:44.937388 [info]: Sec-Fetch-Mode: navigate
+2022-06-08 21:21:44.937395 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:21:44.937402 [info]: Sec-Fetch-User: ?1
+2022-06-08 21:21:44.937408 [info]: 
+2022-06-08 21:21:44.937435 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:21:44.937448 [info]: request;HTTP/1.1 200 OK
+Content-Length:913
+
+2022-06-08 21:21:44.937455 [info]: request;HTTP/1.1 200 OK
+Content-Length:913
+Connection:keep-alive
+
+2022-06-08 21:21:44.937463 [info]: request;HTTP/1.1 200 OK
+Content-Length:913
+Connection:keep-alive
+
+
+2022-06-08 21:21:44.950299 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:21:44.950374 [info]: adjust timer once
+2022-06-08 21:21:45.005843 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:21:45.005971 [info]: adjust timer once
+2022-06-08 21:21:45.006022 [info]: GET /html.css HTTP/1.1
+2022-06-08 21:21:45.006043 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:21:45.006050 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:21:45.006055 [info]: Accept: text/css,*/*;q=0.1
+2022-06-08 21:21:45.006059 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:21:45.006063 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:21:45.006067 [info]: Connection: keep-alive
+2022-06-08 21:21:45.006071 [info]: Referer: http://127.0.0.1:7777/1
+2022-06-08 21:21:45.006076 [info]: Sec-Fetch-Dest: style
+2022-06-08 21:21:45.006080 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:21:45.006085 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:21:45.006089 [info]: 
+2022-06-08 21:21:45.006155 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:21:45.006166 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+
+2022-06-08 21:21:45.006171 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+2022-06-08 21:21:45.006175 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+
+2022-06-08 21:21:45.006330 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:21:45.006345 [info]: adjust timer once
+2022-06-08 21:21:46.411112 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:21:46.411149 [info]: adjust timer once
+2022-06-08 21:21:46.411198 [info]: POST /2CGISQL.cgi HTTP/1.1
+2022-06-08 21:21:46.411270 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:21:46.411279 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:21:46.411289 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+2022-06-08 21:21:46.411294 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:21:46.411298 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:21:46.411302 [info]: Content-Type: application/x-www-form-urlencoded
+2022-06-08 21:21:46.411306 [info]: Content-Length: 23
+2022-06-08 21:21:46.411311 [info]: Origin: http://127.0.0.1:7777
+2022-06-08 21:21:46.411315 [info]: Connection: keep-alive
+2022-06-08 21:21:46.411319 [info]: Referer: http://127.0.0.1:7777/1
+2022-06-08 21:21:46.411323 [info]: Upgrade-Insecure-Requests: 1
+2022-06-08 21:21:46.411327 [info]: Sec-Fetch-Dest: document
+2022-06-08 21:21:46.411331 [info]: Sec-Fetch-Mode: navigate
+2022-06-08 21:21:46.411335 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:21:46.411339 [info]: Sec-Fetch-User: ?1
+2022-06-08 21:21:46.411343 [info]: 
+2022-06-08 21:21:46.411347 [info]: user=7777&password=7777
+2022-06-08 21:21:46.411369 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:21:46.412035 [info]: request;HTTP/1.1 200 OK
+Content-Length:876
+
+2022-06-08 21:21:46.412090 [info]: request;HTTP/1.1 200 OK
+Content-Length:876
+Connection:keep-alive
+
+2022-06-08 21:21:46.412100 [info]: request;HTTP/1.1 200 OK
+Content-Length:876
+Connection:keep-alive
+
+
+2022-06-08 21:21:46.412748 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:21:46.412863 [info]: adjust timer once
+2022-06-08 21:21:46.447686 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:21:46.447765 [info]: adjust timer once
+2022-06-08 21:21:46.447887 [info]: GET /html.css HTTP/1.1
+2022-06-08 21:21:46.447908 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:21:46.447915 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:21:46.447991 [info]: Accept: text/css,*/*;q=0.1
+2022-06-08 21:21:46.447997 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:21:46.448002 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:21:46.448006 [info]: Connection: keep-alive
+2022-06-08 21:21:46.448010 [info]: Referer: http://127.0.0.1:7777/2CGISQL.cgi
+2022-06-08 21:21:46.448014 [info]: Sec-Fetch-Dest: style
+2022-06-08 21:21:46.448018 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:21:46.448022 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:21:46.448026 [info]: 
+2022-06-08 21:21:46.448043 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:21:46.448052 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+
+2022-06-08 21:21:46.448056 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+2022-06-08 21:21:46.448060 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+
+2022-06-08 21:21:46.448213 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:21:46.448232 [info]: adjust timer once
+2022-06-08 21:21:49.249949 [info]: timer tick
+2022-06-08 21:21:54.250478 [info]: timer tick
+2022-06-08 21:21:59.251220 [info]: timer tick
+2022-06-08 21:22:04.251741 [info]: timer tick
+2022-06-08 21:22:09.252536 [info]: timer tick
+2022-06-08 21:22:09.341217 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:22:09.341339 [info]: adjust timer once
+2022-06-08 21:22:09.341377 [info]: POST /5 HTTP/1.1
+2022-06-08 21:22:09.341387 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:22:09.341392 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:22:09.341397 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+2022-06-08 21:22:09.341401 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:22:09.341406 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:22:09.341410 [info]: Content-Type: application/x-www-form-urlencoded
+2022-06-08 21:22:09.341414 [info]: Content-Length: 0
+2022-06-08 21:22:09.341420 [info]: Origin: http://127.0.0.1:7777
+2022-06-08 21:22:09.341427 [info]: Connection: keep-alive
+2022-06-08 21:22:09.341441 [info]: Referer: http://127.0.0.1:7777/2CGISQL.cgi
+2022-06-08 21:22:09.341446 [info]: Upgrade-Insecure-Requests: 1
+2022-06-08 21:22:09.341450 [info]: Sec-Fetch-Dest: document
+2022-06-08 21:22:09.341454 [info]: Sec-Fetch-Mode: navigate
+2022-06-08 21:22:09.341458 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:22:09.341462 [info]: Sec-Fetch-User: ?1
+2022-06-08 21:22:09.341466 [info]: 
+2022-06-08 21:22:09.341484 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:22:09.341493 [info]: request;HTTP/1.1 200 OK
+Content-Length:479
+
+2022-06-08 21:22:09.341497 [info]: request;HTTP/1.1 200 OK
+Content-Length:479
+Connection:keep-alive
+
+2022-06-08 21:22:09.341501 [info]: request;HTTP/1.1 200 OK
+Content-Length:479
+Connection:keep-alive
+
+
+2022-06-08 21:22:09.370488 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:22:09.370538 [info]: adjust timer once
+2022-06-08 21:22:09.406170 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:22:09.406344 [info]: adjust timer once
+2022-06-08 21:22:09.406413 [info]: GET /html.css HTTP/1.1
+2022-06-08 21:22:09.406506 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:22:09.406517 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:22:09.406522 [info]: Accept: text/css,*/*;q=0.1
+2022-06-08 21:22:09.406527 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:22:09.406531 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:22:09.406535 [info]: Connection: keep-alive
+2022-06-08 21:22:09.406538 [info]: Referer: http://127.0.0.1:7777/5
+2022-06-08 21:22:09.406542 [info]: Sec-Fetch-Dest: style
+2022-06-08 21:22:09.406546 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:22:09.406550 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:22:09.406554 [info]: 
+2022-06-08 21:22:09.406572 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:22:09.406579 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+
+2022-06-08 21:22:09.406584 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+2022-06-08 21:22:09.406588 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+
+2022-06-08 21:22:09.406634 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:22:09.406644 [info]: adjust timer once
+2022-06-08 21:22:09.407345 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:22:09.407463 [info]: adjust timer once
+2022-06-08 21:22:09.407508 [info]: GET /picture1.jpg HTTP/1.1
+2022-06-08 21:22:09.407545 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:22:09.407552 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:22:09.407557 [info]: Accept: image/avif,image/webp,*/*
+2022-06-08 21:22:09.407561 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:22:09.407565 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:22:09.407569 [info]: Connection: keep-alive
+2022-06-08 21:22:09.407573 [info]: Referer: http://127.0.0.1:7777/5
+2022-06-08 21:22:09.407577 [info]: Sec-Fetch-Dest: image
+2022-06-08 21:22:09.407581 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:22:09.407586 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:22:09.407590 [info]: 
+2022-06-08 21:22:09.407618 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:22:09.407666 [info]: request;HTTP/1.1 200 OK
+Content-Length:288264
+
+2022-06-08 21:22:09.407674 [info]: request;HTTP/1.1 200 OK
+Content-Length:288264
+Connection:keep-alive
+
+2022-06-08 21:22:09.407679 [info]: request;HTTP/1.1 200 OK
+Content-Length:288264
+Connection:keep-alive
+
+
+2022-06-08 21:22:09.409881 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:22:09.409932 [info]: adjust timer once
+2022-06-08 21:22:14.000454 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:22:14.000542 [info]: adjust timer once
+2022-06-08 21:22:14.000599 [info]: POST /7 HTTP/1.1
+2022-06-08 21:22:14.000661 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:22:14.000672 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:22:14.000685 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+2022-06-08 21:22:14.000690 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:22:14.000694 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:22:14.000698 [info]: Content-Type: application/x-www-form-urlencoded
+2022-06-08 21:22:14.000702 [info]: Content-Length: 0
+2022-06-08 21:22:14.000707 [info]: Origin: http://127.0.0.1:7777
+2022-06-08 21:22:14.000712 [info]: Connection: keep-alive
+2022-06-08 21:22:14.000716 [info]: Referer: http://127.0.0.1:7777/2CGISQL.cgi
+2022-06-08 21:22:14.000723 [info]: Upgrade-Insecure-Requests: 1
+2022-06-08 21:22:14.000729 [info]: Sec-Fetch-Dest: document
+2022-06-08 21:22:14.000733 [info]: Sec-Fetch-Mode: navigate
+2022-06-08 21:22:14.000737 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:22:14.000741 [info]: Sec-Fetch-User: ?1
+2022-06-08 21:22:14.000746 [info]: 
+2022-06-08 21:22:14.000795 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:22:14.000841 [info]: request;HTTP/1.1 200 OK
+Content-Length:447
+
+2022-06-08 21:22:14.000850 [info]: request;HTTP/1.1 200 OK
+Content-Length:447
+Connection:keep-alive
+
+2022-06-08 21:22:14.000854 [info]: request;HTTP/1.1 200 OK
+Content-Length:447
+Connection:keep-alive
+
+
+2022-06-08 21:22:14.017399 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:22:14.017441 [info]: adjust timer once
+2022-06-08 21:22:14.054458 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:22:14.054521 [info]: adjust timer once
+2022-06-08 21:22:14.054589 [info]: GET /html.css HTTP/1.1
+2022-06-08 21:22:14.054644 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:22:14.054651 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:22:14.054656 [info]: Accept: text/css,*/*;q=0.1
+2022-06-08 21:22:14.054660 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:22:14.054664 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:22:14.054668 [info]: Connection: keep-alive
+2022-06-08 21:22:14.054672 [info]: Referer: http://127.0.0.1:7777/7
+2022-06-08 21:22:14.054676 [info]: Sec-Fetch-Dest: style
+2022-06-08 21:22:14.054680 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:22:14.054684 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:22:14.054688 [info]: 
+2022-06-08 21:22:14.054723 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:22:14.054728 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+
+2022-06-08 21:22:14.054732 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+2022-06-08 21:22:14.054736 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+
+2022-06-08 21:22:14.054895 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:22:14.054932 [info]: adjust timer once
+2022-06-08 21:22:14.055236 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:22:14.055258 [info]: GET /picture.jpg HTTP/1.1
+2022-06-08 21:22:14.055265 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:22:14.055270 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:22:14.055274 [info]: Accept: image/avif,image/webp,*/*
+2022-06-08 21:22:14.055294 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:22:14.055298 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:22:14.055302 [info]: Connection: keep-alive
+2022-06-08 21:22:14.055306 [info]: Referer: http://127.0.0.1:7777/7
+2022-06-08 21:22:14.055310 [info]: Sec-Fetch-Dest: image
+2022-06-08 21:22:14.055314 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:22:14.055317 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:22:14.055321 [info]: 
+2022-06-08 21:22:14.055358 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:22:14.055380 [info]: request;HTTP/1.1 200 OK
+Content-Length:562206
+
+2022-06-08 21:22:14.055384 [info]: request;HTTP/1.1 200 OK
+Content-Length:562206
+Connection:keep-alive
+
+2022-06-08 21:22:14.055388 [info]: request;HTTP/1.1 200 OK
+Content-Length:562206
+Connection:keep-alive
+
+
+2022-06-08 21:22:14.055402 [info]: adjust timer once
+2022-06-08 21:22:14.058967 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:22:14.058989 [info]: adjust timer once
+2022-06-08 21:22:14.253317 [info]: timer tick
+2022-06-08 21:22:19.253460 [info]: timer tick
+2022-06-08 21:22:24.254485 [info]: timer tick
+2022-06-08 21:22:29.255080 [info]: timer tick
+2022-06-08 21:22:33.873633 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:22:33.873722 [info]: POST /7 HTTP/1.1
+2022-06-08 21:22:33.873735 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:22:33.873740 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:22:33.873745 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+2022-06-08 21:22:33.873749 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:22:33.873754 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:22:33.873758 [info]: Referer: http://127.0.0.1:7777/2CGISQL.cgi
+2022-06-08 21:22:33.873762 [info]: Content-Type: application/x-www-form-urlencoded
+2022-06-08 21:22:33.873766 [info]: Content-Length: 0
+2022-06-08 21:22:33.873771 [info]: Origin: http://127.0.0.1:7777
+2022-06-08 21:22:33.873775 [info]: Connection: keep-alive
+2022-06-08 21:22:33.873779 [info]: Upgrade-Insecure-Requests: 1
+2022-06-08 21:22:33.873783 [info]: Sec-Fetch-Dest: document
+2022-06-08 21:22:33.873787 [info]: Sec-Fetch-Mode: navigate
+2022-06-08 21:22:33.873792 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:22:33.873796 [info]: Sec-Fetch-User: ?1
+2022-06-08 21:22:33.873800 [info]: 
+2022-06-08 21:22:33.873820 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:22:33.873846 [info]: request;HTTP/1.1 200 OK
+Content-Length:447
+
+2022-06-08 21:22:33.873854 [info]: request;HTTP/1.1 200 OK
+Content-Length:447
+Connection:keep-alive
+
+2022-06-08 21:22:33.873859 [info]: request;HTTP/1.1 200 OK
+Content-Length:447
+Connection:keep-alive
+
+
+2022-06-08 21:22:33.873869 [info]: adjust timer once
+2022-06-08 21:22:33.873906 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:22:33.873954 [info]: adjust timer once
+2022-06-08 21:22:33.894567 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:22:33.894617 [info]: adjust timer once
+2022-06-08 21:22:33.894648 [info]: GET /html.css HTTP/1.1
+2022-06-08 21:22:33.894657 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:22:33.894662 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:22:33.894667 [info]: Accept: text/css,*/*;q=0.1
+2022-06-08 21:22:33.894671 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:22:33.894676 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:22:33.894684 [info]: Connection: keep-alive
+2022-06-08 21:22:33.894689 [info]: Referer: http://127.0.0.1:7777/7
+2022-06-08 21:22:33.894693 [info]: Sec-Fetch-Dest: style
+2022-06-08 21:22:33.894697 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:22:33.894701 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:22:33.894705 [info]: 
+2022-06-08 21:22:33.894723 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:22:33.894728 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+
+2022-06-08 21:22:33.894733 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+2022-06-08 21:22:33.894737 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+
+2022-06-08 21:22:33.894775 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:22:33.894785 [info]: adjust timer once
+2022-06-08 21:22:33.895355 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:22:33.895377 [info]: adjust timer once
+2022-06-08 21:22:33.895412 [info]: GET /picture.jpg HTTP/1.1
+2022-06-08 21:22:33.895431 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:22:33.895438 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:22:33.895443 [info]: Accept: image/avif,image/webp,*/*
+2022-06-08 21:22:33.895479 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:22:33.895488 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:22:33.895492 [info]: Connection: keep-alive
+2022-06-08 21:22:33.895496 [info]: Referer: http://127.0.0.1:7777/7
+2022-06-08 21:22:33.895549 [info]: Sec-Fetch-Dest: image
+2022-06-08 21:22:33.895556 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:22:33.895560 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:22:33.895564 [info]: 
+2022-06-08 21:22:33.895578 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:22:33.895584 [info]: request;HTTP/1.1 200 OK
+Content-Length:562206
+
+2022-06-08 21:22:33.895588 [info]: request;HTTP/1.1 200 OK
+Content-Length:562206
+Connection:keep-alive
+
+2022-06-08 21:22:33.895592 [info]: request;HTTP/1.1 200 OK
+Content-Length:562206
+Connection:keep-alive
+
+
+2022-06-08 21:22:33.896337 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:22:33.896352 [info]: adjust timer once
+2022-06-08 21:22:34.256124 [info]: timer tick
+2022-06-08 21:22:39.256486 [info]: timer tick
+2022-06-08 21:22:44.256949 [info]: timer tick
+2022-06-08 21:22:49.258217 [info]: timer tick
+2022-06-08 21:22:54.258512 [info]: timer tick
+2022-06-08 21:22:59.258849 [info]: timer tick
+2022-06-08 21:23:04.259834 [info]: timer tick
+2022-06-08 21:23:09.260867 [info]: timer tick
+2022-06-08 21:23:14.261312 [info]: timer tick
+2022-06-08 21:23:19.261653 [info]: timer tick
+2022-06-08 21:23:24.262726 [info]: timer tick
+2022-06-08 21:23:29.263307 [info]: timer tick
+2022-06-08 21:23:33.470938 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:23:33.470979 [info]: adjust timer once
+2022-06-08 21:23:33.471023 [info]: POST /6 HTTP/1.1
+2022-06-08 21:23:33.471044 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:23:33.471054 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:23:33.471059 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+2022-06-08 21:23:33.471064 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:23:33.471068 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:23:33.471073 [info]: Content-Type: application/x-www-form-urlencoded
+2022-06-08 21:23:33.471077 [info]: Content-Length: 0
+2022-06-08 21:23:33.471081 [info]: Origin: http://127.0.0.1:7777
+2022-06-08 21:23:33.471085 [info]: Connection: keep-alive
+2022-06-08 21:23:33.471089 [info]: Referer: http://127.0.0.1:7777/2CGISQL.cgi
+2022-06-08 21:23:33.471094 [info]: Upgrade-Insecure-Requests: 1
+2022-06-08 21:23:33.471098 [info]: Sec-Fetch-Dest: document
+2022-06-08 21:23:33.471102 [info]: Sec-Fetch-Mode: navigate
+2022-06-08 21:23:33.471106 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:23:33.471110 [info]: Sec-Fetch-User: ?1
+2022-06-08 21:23:33.471114 [info]: 
+2022-06-08 21:23:33.471133 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:23:33.471139 [info]: request;HTTP/1.1 200 OK
+Content-Length:456
+
+2022-06-08 21:23:33.471143 [info]: request;HTTP/1.1 200 OK
+Content-Length:456
+Connection:keep-alive
+
+2022-06-08 21:23:33.471147 [info]: request;HTTP/1.1 200 OK
+Content-Length:456
+Connection:keep-alive
+
+
+2022-06-08 21:23:33.471477 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:23:33.471532 [info]: adjust timer once
+2022-06-08 21:23:33.510003 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:23:33.510135 [info]: adjust timer once
+2022-06-08 21:23:33.510189 [info]: GET /html.css HTTP/1.1
+2022-06-08 21:23:33.510256 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:23:33.510266 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:23:33.510271 [info]: Accept: text/css,*/*;q=0.1
+2022-06-08 21:23:33.510276 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:23:33.510280 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:23:33.510284 [info]: Connection: keep-alive
+2022-06-08 21:23:33.510392 [info]: Referer: http://127.0.0.1:7777/6
+2022-06-08 21:23:33.510409 [info]: Sec-Fetch-Dest: style
+2022-06-08 21:23:33.510414 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:23:33.510418 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:23:33.510421 [info]: 
+2022-06-08 21:23:33.510458 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:23:33.510463 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+
+2022-06-08 21:23:33.510467 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+2022-06-08 21:23:33.510471 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+
+2022-06-08 21:23:33.510513 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:23:33.510522 [info]: adjust timer once
+2022-06-08 21:23:34.264537 [info]: timer tick
+2022-06-08 21:23:34.946150 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:23:34.946240 [info]: adjust timer once
+2022-06-08 21:23:34.946293 [info]: GET /xxx2.mp4 HTTP/1.1
+2022-06-08 21:23:34.946321 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:23:34.946331 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:23:34.946338 [info]: Accept: video/webm,video/ogg,video/*;q=0.9,application/ogg;q=0.7,audio/*;q=0.6,*/*;q=0.5
+2022-06-08 21:23:34.946344 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:23:34.946350 [info]: Range: bytes=0-
+2022-06-08 21:23:34.946357 [info]: Connection: keep-alive
+2022-06-08 21:23:34.946362 [info]: Referer: http://127.0.0.1:7777/6
+2022-06-08 21:23:34.946368 [info]: Sec-Fetch-Dest: video
+2022-06-08 21:23:34.946374 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:23:34.946380 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:23:34.946386 [info]: 
+2022-06-08 21:23:34.946424 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:23:34.946436 [info]: request;HTTP/1.1 200 OK
+Content-Length:56724831
+
+2022-06-08 21:23:34.946444 [info]: request;HTTP/1.1 200 OK
+Content-Length:56724831
+Connection:keep-alive
+
+2022-06-08 21:23:34.946451 [info]: request;HTTP/1.1 200 OK
+Content-Length:56724831
+Connection:keep-alive
+
+
+2022-06-08 21:23:36.062407 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:23:36.062768 [info]: adjust timer once
+2022-06-08 21:23:36.180197 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:23:36.180330 [info]: adjust timer once
+2022-06-08 21:23:38.699254 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:23:38.699452 [info]: adjust timer once
+2022-06-08 21:23:39.264963 [info]: timer tick
+2022-06-08 21:23:44.265205 [info]: timer tick
+2022-06-08 21:23:49.265493 [info]: timer tick
+2022-06-08 21:23:54.266536 [info]: timer tick
+2022-06-08 21:23:59.266727 [info]: timer tick
+2022-06-08 21:24:04.267162 [info]: timer tick
+2022-06-08 21:24:09.267716 [info]: timer tick
+2022-06-08 21:24:14.267919 [info]: timer tick
+2022-06-08 21:24:19.268211 [info]: timer tick
+2022-06-08 21:24:24.268534 [info]: timer tick
+2022-06-08 21:24:29.268643 [info]: timer tick
+2022-06-08 21:24:34.268770 [info]: timer tick
+2022-06-08 21:24:39.268953 [info]: timer tick
+2022-06-08 21:24:41.987247 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:24:41.987459 [info]: adjust timer once
+2022-06-08 21:24:41.987601 [info]: POST /6 HTTP/1.1
+2022-06-08 21:24:41.987669 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:24:41.987681 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:24:41.987688 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+2022-06-08 21:24:41.987693 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:24:41.987699 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:24:41.987705 [info]: Referer: http://127.0.0.1:7777/2CGISQL.cgi
+2022-06-08 21:24:41.987710 [info]: Content-Type: application/x-www-form-urlencoded
+2022-06-08 21:24:41.987716 [info]: Content-Length: 0
+2022-06-08 21:24:41.987723 [info]: Origin: http://127.0.0.1:7777
+2022-06-08 21:24:41.987729 [info]: Connection: keep-alive
+2022-06-08 21:24:41.987734 [info]: Upgrade-Insecure-Requests: 1
+2022-06-08 21:24:41.987796 [info]: Sec-Fetch-Dest: document
+2022-06-08 21:24:41.987810 [info]: Sec-Fetch-Mode: navigate
+2022-06-08 21:24:41.987817 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:24:41.987822 [info]: Sec-Fetch-User: ?1
+2022-06-08 21:24:41.987826 [info]: 
+2022-06-08 21:24:41.987971 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:24:41.988005 [info]: request;HTTP/1.1 200 OK
+Content-Length:456
+
+2022-06-08 21:24:41.988013 [info]: request;HTTP/1.1 200 OK
+Content-Length:456
+Connection:keep-alive
+
+2022-06-08 21:24:41.988018 [info]: request;HTTP/1.1 200 OK
+Content-Length:456
+Connection:keep-alive
+
+
+2022-06-08 21:24:41.988350 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:41.988415 [info]: adjust timer once
+2022-06-08 21:24:42.027337 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:24:42.027534 [info]: adjust timer once
+2022-06-08 21:24:42.027592 [info]: GET /html.css HTTP/1.1
+2022-06-08 21:24:42.027727 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:24:42.027737 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:24:42.027742 [info]: Accept: text/css,*/*;q=0.1
+2022-06-08 21:24:42.027747 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:24:42.027751 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:24:42.027755 [info]: Connection: keep-alive
+2022-06-08 21:24:42.027759 [info]: Referer: http://127.0.0.1:7777/6
+2022-06-08 21:24:42.027763 [info]: Sec-Fetch-Dest: style
+2022-06-08 21:24:42.027767 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:24:42.027770 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:24:42.027774 [info]: 
+2022-06-08 21:24:42.027793 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:24:42.027798 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+
+2022-06-08 21:24:42.027802 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+2022-06-08 21:24:42.027806 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+
+2022-06-08 21:24:42.027914 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:42.027972 [info]: adjust timer once
+2022-06-08 21:24:42.028572 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:24:42.028716 [info]: adjust timer once
+2022-06-08 21:24:42.028787 [info]: GET /xxx2.mp4 HTTP/1.1
+2022-06-08 21:24:42.028826 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:24:42.028836 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:24:42.028841 [info]: Accept: video/webm,video/ogg,video/*;q=0.9,application/ogg;q=0.7,audio/*;q=0.6,*/*;q=0.5
+2022-06-08 21:24:42.028845 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:24:42.028849 [info]: Range: bytes=36442892-
+2022-06-08 21:24:42.028853 [info]: Connection: keep-alive
+2022-06-08 21:24:42.028857 [info]: Referer: http://127.0.0.1:7777/6
+2022-06-08 21:24:42.028861 [info]: Sec-Fetch-Dest: video
+2022-06-08 21:24:42.028865 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:24:42.028869 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:24:42.028873 [info]: 
+2022-06-08 21:24:42.028896 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:24:42.028901 [info]: request;HTTP/1.1 200 OK
+Content-Length:56724831
+
+2022-06-08 21:24:42.028905 [info]: request;HTTP/1.1 200 OK
+Content-Length:56724831
+Connection:keep-alive
+
+2022-06-08 21:24:42.028909 [info]: request;HTTP/1.1 200 OK
+Content-Length:56724831
+Connection:keep-alive
+
+
+2022-06-08 21:24:42.030538 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:42.030600 [info]: adjust timer once
+2022-06-08 21:24:42.040665 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:42.040885 [info]: adjust timer once
+2022-06-08 21:24:42.042995 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:42.043223 [info]: adjust timer once
+2022-06-08 21:24:43.473854 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:43.473939 [info]: adjust timer once
+2022-06-08 21:24:43.796636 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:43.796720 [info]: adjust timer once
+2022-06-08 21:24:43.887251 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:43.887372 [info]: adjust timer once
+2022-06-08 21:24:43.949333 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:43.949407 [info]: adjust timer once
+2022-06-08 21:24:43.973666 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:43.973743 [info]: adjust timer once
+2022-06-08 21:24:44.029100 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:44.029147 [info]: adjust timer once
+2022-06-08 21:24:44.049925 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:44.049975 [info]: adjust timer once
+2022-06-08 21:24:44.062458 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:44.062529 [info]: adjust timer once
+2022-06-08 21:24:44.083592 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:44.083677 [info]: adjust timer once
+2022-06-08 21:24:44.094641 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:44.094727 [info]: adjust timer once
+2022-06-08 21:24:44.109423 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:44.109545 [info]: adjust timer once
+2022-06-08 21:24:44.117070 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:44.117155 [info]: adjust timer once
+2022-06-08 21:24:44.129678 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:44.129762 [info]: adjust timer once
+2022-06-08 21:24:44.137390 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:44.137480 [info]: adjust timer once
+2022-06-08 21:24:44.163150 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:44.163195 [info]: adjust timer once
+2022-06-08 21:24:44.269190 [info]: timer tick
+2022-06-08 21:24:48.573091 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:48.573296 [info]: adjust timer once
+2022-06-08 21:24:48.776507 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:48.776600 [info]: adjust timer once
+2022-06-08 21:24:48.798041 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:48.798158 [info]: adjust timer once
+2022-06-08 21:24:48.827269 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:48.827638 [info]: adjust timer once
+2022-06-08 21:24:48.852574 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:48.852636 [info]: adjust timer once
+2022-06-08 21:24:48.885408 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:24:48.885500 [info]: adjust timer once
+2022-06-08 21:24:49.269475 [info]: timer tick
+2022-06-08 21:24:54.269621 [info]: timer tick
+2022-06-08 21:24:59.270922 [info]: timer tick
+2022-06-08 21:25:04.271195 [info]: timer tick
+2022-06-08 21:25:09.271573 [info]: timer tick
+2022-06-08 21:25:14.271775 [info]: timer tick
+2022-06-08 21:25:19.272623 [info]: timer tick
+2022-06-08 21:25:24.273297 [info]: timer tick
+2022-06-08 21:25:29.273694 [info]: timer tick
+2022-06-08 21:25:34.274089 [info]: timer tick
+2022-06-08 21:25:39.274951 [info]: timer tick
+2022-06-08 21:25:44.276087 [info]: timer tick
+2022-06-08 21:25:49.277344 [info]: timer tick
+2022-06-08 21:25:54.278004 [info]: timer tick
+2022-06-08 21:25:58.643484 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:25:58.643602 [info]: adjust timer once
+2022-06-08 21:25:58.643681 [info]: POST /7 HTTP/1.1
+2022-06-08 21:25:58.643702 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:25:58.643709 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:25:58.643714 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+2022-06-08 21:25:58.643718 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:25:58.643723 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:25:58.643727 [info]: Content-Type: application/x-www-form-urlencoded
+2022-06-08 21:25:58.643731 [info]: Content-Length: 0
+2022-06-08 21:25:58.643736 [info]: Origin: http://127.0.0.1:7777
+2022-06-08 21:25:58.643783 [info]: Connection: keep-alive
+2022-06-08 21:25:58.643793 [info]: Referer: http://127.0.0.1:7777/2CGISQL.cgi
+2022-06-08 21:25:58.643805 [info]: Upgrade-Insecure-Requests: 1
+2022-06-08 21:25:58.643810 [info]: Sec-Fetch-Dest: document
+2022-06-08 21:25:58.643814 [info]: Sec-Fetch-Mode: navigate
+2022-06-08 21:25:58.643818 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:25:58.643822 [info]: Sec-Fetch-User: ?1
+2022-06-08 21:25:58.643826 [info]: 
+2022-06-08 21:25:58.643845 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:25:58.643850 [info]: request;HTTP/1.1 200 OK
+Content-Length:448
+
+2022-06-08 21:25:58.643854 [info]: request;HTTP/1.1 200 OK
+Content-Length:448
+Connection:keep-alive
+
+2022-06-08 21:25:58.643859 [info]: request;HTTP/1.1 200 OK
+Content-Length:448
+Connection:keep-alive
+
+
+2022-06-08 21:25:58.643992 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:25:58.644010 [info]: adjust timer once
+2022-06-08 21:25:58.694852 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:25:58.694966 [info]: adjust timer once
+2022-06-08 21:25:58.695120 [info]: GET /html.css HTTP/1.1
+2022-06-08 21:25:58.695184 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:25:58.695195 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:25:58.695199 [info]: Accept: text/css,*/*;q=0.1
+2022-06-08 21:25:58.695204 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:25:58.695208 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:25:58.695212 [info]: Connection: keep-alive
+2022-06-08 21:25:58.695216 [info]: Referer: http://127.0.0.1:7777/7
+2022-06-08 21:25:58.695220 [info]: Sec-Fetch-Dest: style
+2022-06-08 21:25:58.695269 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:25:58.695275 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:25:58.695279 [info]: 
+2022-06-08 21:25:58.695296 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:25:58.695301 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+
+2022-06-08 21:25:58.695306 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+2022-06-08 21:25:58.695310 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+
+2022-06-08 21:25:58.695544 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:25:58.695597 [info]: adjust timer once
+2022-06-08 21:25:58.695949 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:25:58.696007 [info]: adjust timer once
+2022-06-08 21:25:58.696043 [info]: GET /picture2.jpg HTTP/1.1
+2022-06-08 21:25:58.696061 [info]: Host: 127.0.0.1:7777
+2022-06-08 21:25:58.696067 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:25:58.696072 [info]: Accept: image/avif,image/webp,*/*
+2022-06-08 21:25:58.696076 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:25:58.696080 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:25:58.696084 [info]: Connection: keep-alive
+2022-06-08 21:25:58.696088 [info]: Referer: http://127.0.0.1:7777/7
+2022-06-08 21:25:58.696092 [info]: Sec-Fetch-Dest: image
+2022-06-08 21:25:58.696096 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:25:58.696100 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:25:58.696104 [info]: 
+2022-06-08 21:25:58.696121 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:25:58.696127 [info]: request;HTTP/1.1 200 OK
+Content-Length:366522
+
+2022-06-08 21:25:58.696131 [info]: request;HTTP/1.1 200 OK
+Content-Length:366522
+Connection:keep-alive
+
+2022-06-08 21:25:58.696135 [info]: request;HTTP/1.1 200 OK
+Content-Length:366522
+Connection:keep-alive
+
+
+2022-06-08 21:25:58.740297 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:25:58.740447 [info]: adjust timer once
+2022-06-08 21:25:59.278341 [info]: timer tick
+2022-06-08 21:26:04.278452 [info]: timer tick
+2022-06-08 21:33:49.034481 [info]: timer tick
+2022-06-08 21:33:53.719018 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:33:53.719198 [info]: adjust timer once
+2022-06-08 21:33:53.719278 [info]: GET / HTTP/1.1
+2022-06-08 21:33:53.719327 [info]: Host: 127.0.0.1:8888
+2022-06-08 21:33:53.719334 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:33:53.719351 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+2022-06-08 21:33:53.719357 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:33:53.719361 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:33:53.719365 [info]: Connection: keep-alive
+2022-06-08 21:33:53.719369 [info]: Upgrade-Insecure-Requests: 1
+2022-06-08 21:33:53.719373 [info]: Sec-Fetch-Dest: document
+2022-06-08 21:33:53.719377 [info]: Sec-Fetch-Mode: navigate
+2022-06-08 21:33:53.719381 [info]: Sec-Fetch-Site: none
+2022-06-08 21:33:53.719385 [info]: Sec-Fetch-User: ?1
+2022-06-08 21:33:53.719389 [info]: 
+2022-06-08 21:33:53.719416 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:33:53.719446 [info]: request;HTTP/1.1 200 OK
+Content-Length:729
+
+2022-06-08 21:33:53.719454 [info]: request;HTTP/1.1 200 OK
+Content-Length:729
+Connection:keep-alive
+
+2022-06-08 21:33:53.719458 [info]: request;HTTP/1.1 200 OK
+Content-Length:729
+Connection:keep-alive
+
+
+2022-06-08 21:33:53.720075 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:33:53.720128 [info]: adjust timer once
+2022-06-08 21:33:53.768297 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:33:53.768428 [info]: adjust timer once
+2022-06-08 21:33:53.768505 [info]: GET /html.css HTTP/1.1
+2022-06-08 21:33:53.768524 [info]: Host: 127.0.0.1:8888
+2022-06-08 21:33:53.768530 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:33:53.768535 [info]: Accept: text/css,*/*;q=0.1
+2022-06-08 21:33:53.768540 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:33:53.768544 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:33:53.768608 [info]: Connection: keep-alive
+2022-06-08 21:33:53.768624 [info]: Referer: http://127.0.0.1:8888/
+2022-06-08 21:33:53.768632 [info]: Sec-Fetch-Dest: style
+2022-06-08 21:33:53.768638 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:33:53.768644 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:33:53.768650 [info]: 
+2022-06-08 21:33:53.768683 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:33:53.768694 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+
+2022-06-08 21:33:53.768699 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+2022-06-08 21:33:53.768703 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+
+2022-06-08 21:33:53.769410 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:33:53.769439 [info]: adjust timer once
+2022-06-08 21:33:53.772175 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:33:53.772278 [info]: adjust timer once
+2022-06-08 21:33:53.772344 [info]: GET /favicon.ico HTTP/1.1
+2022-06-08 21:33:53.772368 [info]: Host: 127.0.0.1:8888
+2022-06-08 21:33:53.772376 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:33:53.772381 [info]: Accept: image/avif,image/webp,*/*
+2022-06-08 21:33:53.772385 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:33:53.772389 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:33:53.772394 [info]: Connection: keep-alive
+2022-06-08 21:33:53.772398 [info]: Referer: http://127.0.0.1:8888/
+2022-06-08 21:33:53.772402 [info]: Sec-Fetch-Dest: image
+2022-06-08 21:33:53.772430 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:33:53.772437 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:33:53.772441 [info]: 
+2022-06-08 21:33:53.772473 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:33:53.772482 [info]: request;HTTP/1.1 200 OK
+Content-Length:4286
+
+2022-06-08 21:33:53.772487 [info]: request;HTTP/1.1 200 OK
+Content-Length:4286
+Connection:keep-alive
+
+2022-06-08 21:33:53.772490 [info]: request;HTTP/1.1 200 OK
+Content-Length:4286
+Connection:keep-alive
+
+
+2022-06-08 21:33:53.773293 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:33:53.773373 [info]: adjust timer once
+2022-06-08 21:33:54.035178 [info]: timer tick
+2022-06-08 21:33:55.949147 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:33:55.949249 [info]: adjust timer once
+2022-06-08 21:33:55.949477 [info]: POST /1 HTTP/1.1
+2022-06-08 21:33:55.949519 [info]: Host: 127.0.0.1:8888
+2022-06-08 21:33:55.949525 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:33:55.949530 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+2022-06-08 21:33:55.949534 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:33:55.949538 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:33:55.949542 [info]: Content-Type: application/x-www-form-urlencoded
+2022-06-08 21:33:55.949546 [info]: Content-Length: 0
+2022-06-08 21:33:55.949550 [info]: Origin: http://127.0.0.1:8888
+2022-06-08 21:33:55.949554 [info]: Connection: keep-alive
+2022-06-08 21:33:55.949558 [info]: Referer: http://127.0.0.1:8888/
+2022-06-08 21:33:55.949562 [info]: Upgrade-Insecure-Requests: 1
+2022-06-08 21:33:55.949566 [info]: Sec-Fetch-Dest: document
+2022-06-08 21:33:55.949569 [info]: Sec-Fetch-Mode: navigate
+2022-06-08 21:33:55.949573 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:33:55.949593 [info]: Sec-Fetch-User: ?1
+2022-06-08 21:33:55.949597 [info]: 
+2022-06-08 21:33:55.949626 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:33:55.949634 [info]: request;HTTP/1.1 200 OK
+Content-Length:913
+
+2022-06-08 21:33:55.949638 [info]: request;HTTP/1.1 200 OK
+Content-Length:913
+Connection:keep-alive
+
+2022-06-08 21:33:55.949642 [info]: request;HTTP/1.1 200 OK
+Content-Length:913
+Connection:keep-alive
+
+
+2022-06-08 21:33:55.969372 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:33:55.969414 [info]: adjust timer once
+2022-06-08 21:33:56.011757 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:33:56.011832 [info]: adjust timer once
+2022-06-08 21:33:56.012025 [info]: GET /html.css HTTP/1.1
+2022-06-08 21:33:56.012060 [info]: Host: 127.0.0.1:8888
+2022-06-08 21:33:56.012070 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:33:56.012075 [info]: Accept: text/css,*/*;q=0.1
+2022-06-08 21:33:56.012098 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:33:56.012102 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:33:56.012106 [info]: Connection: keep-alive
+2022-06-08 21:33:56.012110 [info]: Referer: http://127.0.0.1:8888/1
+2022-06-08 21:33:56.012114 [info]: Sec-Fetch-Dest: style
+2022-06-08 21:33:56.012118 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:33:56.012121 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:33:56.012125 [info]: 
+2022-06-08 21:33:56.012141 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:33:56.012149 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+
+2022-06-08 21:33:56.012154 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+2022-06-08 21:33:56.012158 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+
+2022-06-08 21:33:56.012434 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:33:56.012508 [info]: adjust timer once
+2022-06-08 21:33:56.961965 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:33:56.962369 [info]: adjust timer once
+2022-06-08 21:33:56.962488 [info]: POST /2CGISQL.cgi HTTP/1.1
+2022-06-08 21:33:56.962550 [info]: Host: 127.0.0.1:8888
+2022-06-08 21:33:56.962561 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:33:56.962566 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+2022-06-08 21:33:56.962570 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:33:56.962574 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:33:56.962578 [info]: Content-Type: application/x-www-form-urlencoded
+2022-06-08 21:33:56.962582 [info]: Content-Length: 23
+2022-06-08 21:33:56.962591 [info]: Origin: http://127.0.0.1:8888
+2022-06-08 21:33:56.962596 [info]: Connection: keep-alive
+2022-06-08 21:33:56.962600 [info]: Referer: http://127.0.0.1:8888/1
+2022-06-08 21:33:56.962603 [info]: Upgrade-Insecure-Requests: 1
+2022-06-08 21:33:56.962607 [info]: Sec-Fetch-Dest: document
+2022-06-08 21:33:56.962611 [info]: Sec-Fetch-Mode: navigate
+2022-06-08 21:33:56.962615 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:33:56.962618 [info]: Sec-Fetch-User: ?1
+2022-06-08 21:33:56.962622 [info]: 
+2022-06-08 21:33:56.962626 [info]: user=8888&password=8888
+2022-06-08 21:33:56.962650 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:33:56.962658 [info]: request;HTTP/1.1 200 OK
+Content-Length:876
+
+2022-06-08 21:33:56.962663 [info]: request;HTTP/1.1 200 OK
+Content-Length:876
+Connection:keep-alive
+
+2022-06-08 21:33:56.962666 [info]: request;HTTP/1.1 200 OK
+Content-Length:876
+Connection:keep-alive
+
+
+2022-06-08 21:33:56.963054 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:33:56.963073 [info]: adjust timer once
+2022-06-08 21:33:57.000524 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:33:57.000608 [info]: adjust timer once
+2022-06-08 21:33:57.000704 [info]: GET /html.css HTTP/1.1
+2022-06-08 21:33:57.000810 [info]: Host: 127.0.0.1:8888
+2022-06-08 21:33:57.000821 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:33:57.000826 [info]: Accept: text/css,*/*;q=0.1
+2022-06-08 21:33:57.000830 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:33:57.000834 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:33:57.000837 [info]: Connection: keep-alive
+2022-06-08 21:33:57.000841 [info]: Referer: http://127.0.0.1:8888/2CGISQL.cgi
+2022-06-08 21:33:57.000845 [info]: Sec-Fetch-Dest: style
+2022-06-08 21:33:57.000849 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:33:57.000853 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:33:57.000856 [info]: 
+2022-06-08 21:33:57.000875 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:33:57.000883 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+
+2022-06-08 21:33:57.000887 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+2022-06-08 21:33:57.000891 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+
+2022-06-08 21:33:57.000937 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:33:57.000947 [info]: adjust timer once
+2022-06-08 21:33:57.778965 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:33:57.779004 [info]: adjust timer once
+2022-06-08 21:33:57.779114 [info]: POST /5 HTTP/1.1
+2022-06-08 21:33:57.779180 [info]: Host: 127.0.0.1:8888
+2022-06-08 21:33:57.779191 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:33:57.779196 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+2022-06-08 21:33:57.779200 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:33:57.779204 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:33:57.779208 [info]: Content-Type: application/x-www-form-urlencoded
+2022-06-08 21:33:57.779212 [info]: Content-Length: 0
+2022-06-08 21:33:57.779216 [info]: Origin: http://127.0.0.1:8888
+2022-06-08 21:33:57.779220 [info]: Connection: keep-alive
+2022-06-08 21:33:57.779224 [info]: Referer: http://127.0.0.1:8888/2CGISQL.cgi
+2022-06-08 21:33:57.779228 [info]: Upgrade-Insecure-Requests: 1
+2022-06-08 21:33:57.779232 [info]: Sec-Fetch-Dest: document
+2022-06-08 21:33:57.779236 [info]: Sec-Fetch-Mode: navigate
+2022-06-08 21:33:57.779240 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:33:57.779244 [info]: Sec-Fetch-User: ?1
+2022-06-08 21:33:57.779247 [info]: 
+2022-06-08 21:33:57.779272 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:33:57.779281 [info]: request;HTTP/1.1 200 OK
+Content-Length:479
+
+2022-06-08 21:33:57.779285 [info]: request;HTTP/1.1 200 OK
+Content-Length:479
+Connection:keep-alive
+
+2022-06-08 21:33:57.779289 [info]: request;HTTP/1.1 200 OK
+Content-Length:479
+Connection:keep-alive
+
+
+2022-06-08 21:33:57.779883 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:33:57.779903 [info]: adjust timer once
+2022-06-08 21:33:57.807070 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:33:57.807202 [info]: GET /html.css HTTP/1.1
+2022-06-08 21:33:57.807221 [info]: Host: 127.0.0.1:8888
+2022-06-08 21:33:57.807227 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:33:57.807232 [info]: Accept: text/css,*/*;q=0.1
+2022-06-08 21:33:57.807236 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:33:57.807239 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:33:57.807243 [info]: Connection: keep-alive
+2022-06-08 21:33:57.807247 [info]: Referer: http://127.0.0.1:8888/5
+2022-06-08 21:33:57.807251 [info]: Sec-Fetch-Dest: style
+2022-06-08 21:33:57.807255 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:33:57.807259 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:33:57.807263 [info]: 
+2022-06-08 21:33:57.807282 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:33:57.807287 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+
+2022-06-08 21:33:57.807291 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+2022-06-08 21:33:57.807295 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+
+2022-06-08 21:33:57.807421 [info]: adjust timer once
+2022-06-08 21:33:57.807474 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:33:57.807483 [info]: adjust timer once
+2022-06-08 21:33:57.812482 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:33:57.812575 [info]: GET /picture1.jpg HTTP/1.1
+2022-06-08 21:33:57.812588 [info]: Host: 127.0.0.1:8888
+2022-06-08 21:33:57.812593 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:33:57.812597 [info]: Accept: image/avif,image/webp,*/*
+2022-06-08 21:33:57.812601 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:33:57.812607 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:33:57.812617 [info]: Connection: keep-alive
+2022-06-08 21:33:57.812628 [info]: Referer: http://127.0.0.1:8888/5
+2022-06-08 21:33:57.812636 [info]: Sec-Fetch-Dest: image
+2022-06-08 21:33:57.812643 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:33:57.812649 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:33:57.812654 [info]: 
+2022-06-08 21:33:57.812690 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:33:57.812698 [info]: request;HTTP/1.1 200 OK
+Content-Length:288264
+
+2022-06-08 21:33:57.812705 [info]: request;HTTP/1.1 200 OK
+Content-Length:288264
+Connection:keep-alive
+
+2022-06-08 21:33:57.812712 [info]: request;HTTP/1.1 200 OK
+Content-Length:288264
+Connection:keep-alive
+
+
+2022-06-08 21:33:57.812774 [info]: adjust timer once
+2022-06-08 21:33:57.860473 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:33:57.860550 [info]: adjust timer once
+2022-06-08 21:33:59.035482 [info]: timer tick
+2022-06-08 21:34:00.369942 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:34:00.370045 [info]: adjust timer once
+2022-06-08 21:34:00.370101 [info]: POST /6 HTTP/1.1
+2022-06-08 21:34:00.370124 [info]: Host: 127.0.0.1:8888
+2022-06-08 21:34:00.370130 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:34:00.370135 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+2022-06-08 21:34:00.370139 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:34:00.370143 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:34:00.370147 [info]: Content-Type: application/x-www-form-urlencoded
+2022-06-08 21:34:00.370151 [info]: Content-Length: 0
+2022-06-08 21:34:00.370155 [info]: Origin: http://127.0.0.1:8888
+2022-06-08 21:34:00.370159 [info]: Connection: keep-alive
+2022-06-08 21:34:00.370164 [info]: Referer: http://127.0.0.1:8888/2CGISQL.cgi
+2022-06-08 21:34:00.370175 [info]: Upgrade-Insecure-Requests: 1
+2022-06-08 21:34:00.370180 [info]: Sec-Fetch-Dest: document
+2022-06-08 21:34:00.370184 [info]: Sec-Fetch-Mode: navigate
+2022-06-08 21:34:00.370188 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:34:00.370192 [info]: Sec-Fetch-User: ?1
+2022-06-08 21:34:00.370196 [info]: 
+2022-06-08 21:34:00.370220 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:34:00.370226 [info]: request;HTTP/1.1 200 OK
+Content-Length:456
+
+2022-06-08 21:34:00.370230 [info]: request;HTTP/1.1 200 OK
+Content-Length:456
+Connection:keep-alive
+
+2022-06-08 21:34:00.370234 [info]: request;HTTP/1.1 200 OK
+Content-Length:456
+Connection:keep-alive
+
+
+2022-06-08 21:34:00.370951 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:34:00.371007 [info]: adjust timer once
+2022-06-08 21:34:00.404063 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:34:00.404108 [info]: GET /html.css HTTP/1.1
+2022-06-08 21:34:00.404117 [info]: Host: 127.0.0.1:8888
+2022-06-08 21:34:00.404122 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:34:00.404126 [info]: Accept: text/css,*/*;q=0.1
+2022-06-08 21:34:00.404130 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:34:00.404134 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:34:00.404138 [info]: Connection: keep-alive
+2022-06-08 21:34:00.404141 [info]: Referer: http://127.0.0.1:8888/6
+2022-06-08 21:34:00.404145 [info]: Sec-Fetch-Dest: style
+2022-06-08 21:34:00.404149 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:34:00.404153 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:34:00.404156 [info]: 
+2022-06-08 21:34:00.404226 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:34:00.404235 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+
+2022-06-08 21:34:00.404240 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+2022-06-08 21:34:00.404243 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+
+2022-06-08 21:34:00.404254 [info]: adjust timer once
+2022-06-08 21:34:00.404288 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:34:00.404296 [info]: adjust timer once
+2022-06-08 21:34:00.415645 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:34:00.415742 [info]: adjust timer once
+2022-06-08 21:34:00.415855 [info]: GET /xxx2.mp4 HTTP/1.1
+2022-06-08 21:34:00.415880 [info]: Host: 127.0.0.1:8888
+2022-06-08 21:34:00.415889 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:34:00.415896 [info]: Accept: video/webm,video/ogg,video/*;q=0.9,application/ogg;q=0.7,audio/*;q=0.6,*/*;q=0.5
+2022-06-08 21:34:00.415902 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:34:00.415908 [info]: Range: bytes=0-
+2022-06-08 21:34:00.415915 [info]: Connection: keep-alive
+2022-06-08 21:34:00.415920 [info]: Referer: http://127.0.0.1:8888/6
+2022-06-08 21:34:00.415928 [info]: Sec-Fetch-Dest: video
+2022-06-08 21:34:00.415936 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:34:00.415944 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:34:00.415950 [info]: 
+2022-06-08 21:34:00.415983 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:34:00.415991 [info]: request;HTTP/1.1 200 OK
+Content-Length:56724831
+
+2022-06-08 21:34:00.415997 [info]: request;HTTP/1.1 200 OK
+Content-Length:56724831
+Connection:keep-alive
+
+2022-06-08 21:34:00.416003 [info]: request;HTTP/1.1 200 OK
+Content-Length:56724831
+Connection:keep-alive
+
+
+2022-06-08 21:34:00.700199 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:34:00.700313 [info]: adjust timer once
+2022-06-08 21:34:00.799062 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:34:00.799242 [info]: adjust timer once
+2022-06-08 21:34:02.656967 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:34:02.657035 [info]: adjust timer once
+2022-06-08 21:34:02.716850 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:34:02.716903 [info]: adjust timer once
+2022-06-08 21:34:02.776107 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:34:02.776220 [info]: adjust timer once
+2022-06-08 21:34:02.796460 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:34:02.796515 [info]: adjust timer once
+2022-06-08 21:34:02.850853 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:34:02.850942 [info]: adjust timer once
+2022-06-08 21:34:02.910544 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:34:02.910603 [info]: adjust timer once
+2022-06-08 21:34:02.929283 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:34:02.929364 [info]: adjust timer once
+2022-06-08 21:34:02.984060 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:34:02.984221 [info]: adjust timer once
+2022-06-08 21:34:03.122474 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:34:03.122539 [info]: adjust timer once
+2022-06-08 21:34:04.035934 [info]: timer tick
+2022-06-08 21:34:07.176028 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:34:07.176164 [info]: adjust timer once
+2022-06-08 21:34:07.228901 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:34:07.228945 [info]: adjust timer once
+2022-06-08 21:34:07.321803 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:34:07.322111 [info]: adjust timer once
+2022-06-08 21:34:07.708556 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:34:07.708708 [info]: adjust timer once
+2022-06-08 21:34:09.036048 [info]: timer tick
+2022-06-08 21:34:09.538408 [info]: close fd 16
+2022-06-08 21:34:12.048166 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:34:12.048307 [info]: adjust timer once
+2022-06-08 21:34:12.048366 [info]: POST /7 HTTP/1.1
+2022-06-08 21:34:12.048431 [info]: Host: 127.0.0.1:8888
+2022-06-08 21:34:12.048443 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:34:12.048448 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+2022-06-08 21:34:12.048453 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:34:12.048457 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:34:12.048461 [info]: Content-Type: application/x-www-form-urlencoded
+2022-06-08 21:34:12.048465 [info]: Content-Length: 0
+2022-06-08 21:34:12.048470 [info]: Origin: http://127.0.0.1:8888
+2022-06-08 21:34:12.048474 [info]: Connection: keep-alive
+2022-06-08 21:34:12.048478 [info]: Referer: http://127.0.0.1:8888/2CGISQL.cgi
+2022-06-08 21:34:12.048483 [info]: Upgrade-Insecure-Requests: 1
+2022-06-08 21:34:12.048487 [info]: Sec-Fetch-Dest: document
+2022-06-08 21:34:12.048491 [info]: Sec-Fetch-Mode: navigate
+2022-06-08 21:34:12.048495 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:34:12.048541 [info]: Sec-Fetch-User: ?1
+2022-06-08 21:34:12.048550 [info]: 
+2022-06-08 21:34:12.048576 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:34:12.048582 [info]: request;HTTP/1.1 200 OK
+Content-Length:448
+
+2022-06-08 21:34:12.048586 [info]: request;HTTP/1.1 200 OK
+Content-Length:448
+Connection:keep-alive
+
+2022-06-08 21:34:12.048590 [info]: request;HTTP/1.1 200 OK
+Content-Length:448
+Connection:keep-alive
+
+
+2022-06-08 21:34:12.070959 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:34:12.071003 [info]: adjust timer once
+2022-06-08 21:34:12.100018 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:34:12.100164 [info]: adjust timer once
+2022-06-08 21:34:12.100179 [info]: GET /html.css HTTP/1.1
+2022-06-08 21:34:12.100214 [info]: Host: 127.0.0.1:8888
+2022-06-08 21:34:12.100224 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:34:12.100231 [info]: Accept: text/css,*/*;q=0.1
+2022-06-08 21:34:12.100239 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:34:12.100248 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:34:12.100307 [info]: Connection: keep-alive
+2022-06-08 21:34:12.100324 [info]: Referer: http://127.0.0.1:8888/7
+2022-06-08 21:34:12.100331 [info]: Sec-Fetch-Dest: style
+2022-06-08 21:34:12.100349 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:34:12.100354 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:34:12.100358 [info]: 
+2022-06-08 21:34:12.100380 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:34:12.100406 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+
+2022-06-08 21:34:12.100414 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+2022-06-08 21:34:12.100418 [info]: request;HTTP/1.1 200 OK
+Content-Length:3562
+Connection:keep-alive
+
+
+2022-06-08 21:34:12.100507 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:34:12.100562 [info]: adjust timer once
+2022-06-08 21:34:12.101603 [info]: deal with the client(127.0.0.1)
+2022-06-08 21:34:12.101679 [info]: adjust timer once
+2022-06-08 21:34:12.101753 [info]: GET /picture2.jpg HTTP/1.1
+2022-06-08 21:34:12.101773 [info]: Host: 127.0.0.1:8888
+2022-06-08 21:34:12.101779 [info]: User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:100.0) Gecko/20100101 Firefox/100.0
+2022-06-08 21:34:12.101783 [info]: Accept: image/avif,image/webp,*/*
+2022-06-08 21:34:12.101787 [info]: Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2022-06-08 21:34:12.101791 [info]: Accept-Encoding: gzip, deflate, br
+2022-06-08 21:34:12.101795 [info]: Connection: keep-alive
+2022-06-08 21:34:12.101798 [info]: Referer: http://127.0.0.1:8888/7
+2022-06-08 21:34:12.101802 [info]: Sec-Fetch-Dest: image
+2022-06-08 21:34:12.101806 [info]: Sec-Fetch-Mode: no-cors
+2022-06-08 21:34:12.101810 [info]: Sec-Fetch-Site: same-origin
+2022-06-08 21:34:12.101814 [info]: 
+2022-06-08 21:34:12.101844 [info]: request;HTTP/1.1 200 OK
+
+2022-06-08 21:34:12.101849 [info]: request;HTTP/1.1 200 OK
+Content-Length:366522
+
+2022-06-08 21:34:12.101853 [info]: request;HTTP/1.1 200 OK
+Content-Length:366522
+Connection:keep-alive
+
+2022-06-08 21:34:12.101857 [info]: request;HTTP/1.1 200 OK
+Content-Length:366522
+Connection:keep-alive
+
+
+2022-06-08 21:34:12.103566 [info]: send data to the client(127.0.0.1)
+2022-06-08 21:34:12.103650 [info]: adjust timer once
+2022-06-08 21:34:14.037281 [info]: timer tick
