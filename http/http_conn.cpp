@@ -62,7 +62,7 @@ void addfd(int epollfd, int fd, bool one_shot, int TRIGmode) {
         event.events = EPOLLIN | EPOLLRDHUP;
     }
     if (one_shot) {
-        event.events |= EPOLLONESHOT;
+        event.events |= EPOLLONESHOT;   //针对connfd，开启EPOLLONESHOT，每个socket在任意时刻都只被一个线程处理
     }
     epoll_ctl(epollfd, EPOLL_CTL_ADD, fd, &event);
     setnonblocking(fd);
@@ -555,7 +555,7 @@ bool http_conn::add_response(const char* format, ...) {
     }
     m_write_idx += len;         //更新m_write_idx位置
     va_end(arg_list);           //清空可变参列表
-    LOG_INFO("request;%s", m_write_buf);
+    LOG_INFO("%s", m_write_buf);
     return true;
 }
 

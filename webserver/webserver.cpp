@@ -95,7 +95,7 @@ void WebServer::thread_pool() {
 
 void WebServer::eventListen() {
     //网络编程基础步骤
-    m_listenfd = socket(PF_INET, SOCK_STREAM, 0);
+    m_listenfd = socket(PF_INET, SOCK_STREAM, 0);       //创建监听socket文件描述符
     assert(m_listenfd >= 0);
 
     //优雅关闭连接
@@ -108,27 +108,27 @@ void WebServer::eventListen() {
         setsockopt(m_listenfd, SOL_SOCKET, SO_LINGER, &tmp, sizeof(tmp));
     } 
     int ret = 0;
-    struct sockaddr_in address;
-    memset(&address, 0, sizeof(address));  //
+    struct sockaddr_in address;              //创建监听socket的TCP/IP的IPV4 socket地址
+    memset(&address, 0, sizeof(address));  
     address.sin_family = AF_INET;
-    address.sin_addr.s_addr = htonl(INADDR_ANY);
+    address.sin_addr.s_addr = htonl(INADDR_ANY);        //INADDR_ANY：将套接字绑定到所有可用的接口    
     address.sin_port = htons(m_port);
 
     int flag = 1;
-    setsockopt(m_listenfd, SOL_SOCKET, SO_REUSEADDR, &flag, sizeof(flag));
-    ret = bind(m_listenfd, (struct sockaddr*)&address, sizeof(address));
+    setsockopt(m_listenfd, SOL_SOCKET, SO_REUSEADDR, &flag, sizeof(flag));      //SO_REUSEADDR 允许端口被重复使用
+    ret = bind(m_listenfd, (struct sockaddr*)&address, sizeof(address));        //绑定socket和它的地址
     assert(ret >= 0);
-    ret = listen(m_listenfd, 5);
+    ret = listen(m_listenfd, 5);        //创建监听队列以存放待处理的客户连接，在这些客户连接被accept()之前
     assert(ret >= 0);
 
     utils.init(TIMESLOT);
 
     //epoll创建内核事件表
-    epoll_event events[MAX_EVENT_NUMBER];
-    m_epollfd = epoll_create(5);
+    epoll_event events[MAX_EVENT_NUMBER];       //用于存储epoll事件表中就绪事件的event数组 
+    m_epollfd = epoll_create(5);            //创建一个额外的文件描述符来唯一标识内核中的epoll事件表 
     assert(m_epollfd != -1);
 
-    utils.addfd(m_epollfd, m_listenfd, false, m_LISTENTrigmode);
+    utils.addfd(m_epollfd, m_listenfd, false, m_LISTENTrigmode);       //主线程往epoll内核事件表中注册监听socket事件，当listen到新的客户连接时，m_listenfd变为就绪事件
     http_conn::m_epollfd = m_epollfd;
 
     ret = socketpair(PF_UNIX, SOCK_STREAM, 0, m_pipefd);
@@ -250,6 +250,7 @@ bool WebServer::dealwithsignal(bool& timeout, bool& stop_server) {
     return true;
 }
 
+//sockfd上有可读事件时，epoll_wait通知主线程处理
 void WebServer::dealwithread(int sockfd) {
     util_timer* timer = users_timer[sockfd].timer;
 
@@ -258,7 +259,7 @@ void WebServer::dealwithread(int sockfd) {
         if (timer) {
             adjust_timer(timer);
         }
-        //若监测到读事件，将该事件放入请求队列
+        //若监测到读事件，将读取到的数据封装成一个请求对象并插入请求队列
         m_pool->append(users + sockfd, 0);
 
         while (true) {
@@ -276,7 +277,7 @@ void WebServer::dealwithread(int sockfd) {
     else {
         if (users[sockfd].read_once()) {
             LOG_INFO("deal with the client(%s)", inet_ntoa(users[sockfd].get_address()->sin_addr));
-            //若监测到读事件，将该事件放入请求队列
+            
             m_pool->append_p(users + sockfd);
             if (timer) {
                 adjust_timer(timer);
@@ -289,6 +290,7 @@ void WebServer::dealwithread(int sockfd) {
 
 }
 
+//sockfd上有可写事件时，epoll_wait通知主线程。主线程往socket上写入服务器处理客户请求的结果
 void WebServer::dealwithwrite(int sockfd) {
     util_timer* timer = users_timer[sockfd].timer;
     //reactor
