@@ -3,7 +3,7 @@
 #include <mysql/mysql.h>
 #include <fstream>
 
-// 300行代码有修改 
+
 // 定义http响应的状态信息
 const char *status_200_title = "OK";
 const char *status_400_title = "Bad Request";

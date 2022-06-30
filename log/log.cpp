@@ -39,25 +39,21 @@ bool Log::init(const char* file_name, int close_log, int log_buf_size, int split
     m_split_lines = split_lines;
 
     time_t t = time(NULL);
-    struct tm* sys_tm = localtime(&t);
+    struct tm* sys_tm = localtime(&t);          //将时间数值变换成本地时间，考虑到本地时区和夏令时标志;
     struct tm my_tm = *sys_tm;
 
-     //从后往前找到第一个/的位置
+    //从前往后找到第一个/的位置
     const char* p = strchr(file_name, '/');
     char log_full_name[256] = {0};
 
-     //相当于自定义日志名
-     //若输入的文件名没有/，则直接将时间+文件名作为日志名
+    //相当于自定义日志名
+    //若输入的文件名没有/，则直接将时间+文件名作为日志名
     if (p == NULL) {
         snprintf(log_full_name, 255, "%d_%02d_%02d_%s", my_tm.tm_year + 1900, my_tm.tm_mon + 1, my_tm.tm_mday, file_name);
     } else {
-        //将/的位置向后移动一个位置，然后复制到logname中
-       //p - file_name + 1是文件所在路径文件夹的长度
-       //dirname相当于./
-        strcpy(log_name, p + 1);
-        strncpy(dir_name, file_name, p - file_name + 1);
+        strcpy(log_name, p + 1);    //将/的位置向后移动一个位置，然后复制到logname中
+        strncpy(dir_name, file_name, p - file_name + 1);    //p - file_name + 1是文件所在路径文件夹的长度，dir_name相当于./
         snprintf(log_full_name, 255, "%d_%02d_%02d_%s", my_tm.tm_year + 1900, my_tm.tm_mon + 1, my_tm.tm_mday, log_name); 
-
     }
     m_today = my_tm.tm_mday;
     m_fp = fopen(log_full_name, "a");
@@ -68,6 +64,7 @@ bool Log::init(const char* file_name, int close_log, int log_buf_size, int split
 
 }
 
+//将系统信息格式化后输出，具体为：格式化时间 + 格式化内容
 void Log::write_log(int level, const char* format, ...) {
     struct timeval now = {0, 0};
     gettimeofday(&now, NULL);
@@ -100,8 +97,7 @@ void Log::write_log(int level, const char* format, ...) {
     }
     m_mutex.lock();
     ++m_count;
-     //日志不是今天或写入的日志行数是最大行的倍数
-   //m_split_lines为最大行数
+    //日志不是今天或写入的日志行数是最大行的倍数,m_split_lines为最大行数
     if (m_today != my_tm.tm_mday || m_count % m_split_lines == 0) {
         char new_log[256] = {0};
         fflush(m_fp);
@@ -127,12 +123,12 @@ void Log::write_log(int level, const char* format, ...) {
     string log_str;
     m_mutex.lock();
 
-     //写入内容格式：时间 + 内容
-     //时间格式化，snprintf成功返回写字符的总数，其中不包括结尾的null字符
+    //写入内容格式：时间 + 内容
+    //时间格式化，snprintf成功返回写字符的总数，其中不包括结尾的null字符
     int n = snprintf(m_buf, 48, "%d-%02d-%02d %02d:%02d:%02d.%06ld %s ",
                      my_tm.tm_year + 1900, my_tm.tm_mon + 1, my_tm.tm_mday,
                      my_tm.tm_hour, my_tm.tm_min, my_tm.tm_sec, now.tv_usec, s);
-     //内容格式化，用于向字符串中打印数据、数据格式用户自定义，返回写入到字符数组str中的字符个数(不包含终止符
+    //内容格式化，用于向字符串中打印数据、数据格式用户自定义，返回写入到字符数组str中的字符个数(不包含终止符
     int m = vsnprintf(m_buf + n, m_log_buf_size - 1, format, valst);
     m_buf[n + m] = '\n';
     m_buf[n + m + 1] = '\0';
